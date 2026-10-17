@@ -17,6 +17,11 @@
                     View Offers
                 </a>
             </div>
+
+            <!-- Right Image -->
+             <div class="w-full lg:w-1/2 flex justify-center">
+                <img src="" alt="Hero Product" class="w-3/4 lg:w-full max-w-md mx-auto rounded-xl shadow-lg">
+             </div>
          </div>
     </section>
 </template>
