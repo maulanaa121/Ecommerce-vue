@@ -1,13 +1,8 @@
 <template lang="">
   <div>
-    <h1 class="text-3xl font-bold underline text-amber-400">Hello World</h1>
+    <Header />
   </div>
 </template>
-<script>
-export default {
-  
-}
+<script setup>
+  import Header from './components/Header.vue';
 </script>
-<style lang="">
-  
-</style>

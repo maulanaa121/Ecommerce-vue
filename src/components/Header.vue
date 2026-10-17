@@ -66,7 +66,15 @@ const navItems = [
 ]
 
 const handleScroll = () => {
-
+    isScrolled.value = window.scrollY > 10
 }
+
+onMounted(()=>{
+    window.addEventListener('scroll',handleScroll)
+})
+
+onUnmounted(()=>{
+    window.removeEventListener('scroll',handleScroll)
+})
 
 </script>
