@@ -75,6 +75,10 @@
     </section>
 </template>
 <script setup>
+const productImages = import.meta.glob('../assets/product*.png', {
+    eager: true,
+    import: 'default'
+});
 import {ref,computed,onMounted,onBeforeUnmount} from 'vue'
 const currentSlide = ref(0);
 const productsPerPage = ref(4);
@@ -85,7 +89,7 @@ const products = [
         name:'Floral',
         price:99.99,
         rating:4.5,
-        image:'../assets/product.png',
+        image:productImages['../assets/product.png'],
         discount:20
     },
     {
@@ -93,7 +97,7 @@ const products = [
         name:'Oriental',
         price:199.99,
         rating:4.2,
-        image:'../assets/product1.png',
+        image:productImages['../assets/product1.png'],
         discount:15
     },
     {
@@ -101,7 +105,7 @@ const products = [
         name:'Woody',
         price:79.99,
         rating:4.7,
-        image:'../assets/product2.png',
+        image:productImages['../assets/product2.png'],
         discount:10
     },
     {
@@ -109,7 +113,7 @@ const products = [
         name:'Floral',
         price:99.99,
         rating:4.5,
-        image:'../assets/product3.png',
+        image:productImages['../assets/product3.png'],
         discount:0
     },
     {
@@ -117,7 +121,7 @@ const products = [
         name:'Floral',
         price:99.99,
         rating:4.5,
-        image:'../assets/product4.png',
+        image:productImages['../assets/product4.png'],
         discount:25
     },
     {
@@ -125,7 +129,7 @@ const products = [
         name:'Floral',
         price:99.99,
         rating:4.5,
-        image:'../assets/product5.png',
+        image:productImages['../assets/product5.png'],
         discount:5
     },
     {
@@ -133,7 +137,7 @@ const products = [
         name:'Floral',
         price:99.99,
         rating:4.5,
-        image:'../assets/product6.png',
+        image:productImages['../assets/product6.png'],
         discount:5
     },
     {
@@ -141,7 +145,7 @@ const products = [
         name:'Floral',
         price:99.99,
         rating:4.5,
-        image:'../assets/product7.png',
+        image:productImages['../assets/product7.png'],
         discount:5
     },
 ]
