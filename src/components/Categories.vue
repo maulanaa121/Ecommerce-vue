@@ -22,4 +22,49 @@
     </section>
 </template>
 <script setup>
+import { ref } from 'vue';
+
+const productImages = import.meta.glob('../assets/product*.png', {
+    eager: true,
+    import: 'default'
+});
+
+const categories = ref([
+    {   
+        title:"Men's collection",
+        image:productImages['../assets/product8.png'],
+        description : "Bold & masculine scents",
+        alt:"Men's collection"
+    },
+    {   
+        title: "Women's collection",
+        image: productImages['../assets/product1.png'],
+        description: "Elegant & floral fragrances",
+        alt: "Women's collection"
+    },
+    {   
+        title: "Unisex collection",
+        image: productImages['../assets/product2.png'],
+        description: "Versatile & balanced blends",
+        alt: "Unisex collection"
+    },
+    {   
+        title: "Summer fresh",
+        image: productImages['../assets/product3.png'],
+        description: "Light, citrus & refreshing notes",
+        alt: "Summer fresh collection"
+    },
+    {   
+        title: "Luxury oud & spice",
+        image: productImages['../assets/product4.png'],
+        description: "Rich, warm & exotic oriental scents",
+        alt: "Luxury oud & spice collection"
+    },
+    {   
+        title: "Limited edition",
+        image: productImages['../assets/product5.png'],
+        description: "Exclusive & rare aromatic craft",
+        alt: "Limited edition collection"
+    }
+])
 </script>
