@@ -58,7 +58,7 @@ const categories = ref([
     },
     {   
         title: "Summer fresh",
-        image: productImages['../assets/produc11.png'],
+        image: productImages['../assets/product11.png'],
         description: "Light, citrus & refreshing notes",
         alt: "Summer fresh collection"
     },
