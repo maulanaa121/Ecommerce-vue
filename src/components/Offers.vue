@@ -18,6 +18,14 @@
                         <Icon icon="svg-spinners:clock" class="mr-2" />
                         <span>Ends on {{ offer.endDate }}</span>
                     </div>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-500 mb-1">Use code</p>
+                        <p class="font-bold font-mono text-lg">
+                            {{ offer.code }}
+                        </p>
+                    </div>
+
+                    <button :class="[offer.textColor,'w-full py-3 rounded-lg font-semibold border',offer.textColor.replace('text-', 'border-'),'hover:bg-white transition-colors duration-300']" >Claim Offers</button>
                 </div>
             </div>
         </div>
