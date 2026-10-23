@@ -35,7 +35,6 @@
 
 import { ref } from 'vue';
     const currentOffers = ref([
-        [
   {
     id: 1,
     title: 'Hot Summer Sale',
@@ -66,7 +65,6 @@ import { ref } from 'vue';
     bgColor: 'bg-blue-200',
     textColor: 'text-blue-800'
   }
-]
     ])
 
 </script>
