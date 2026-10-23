@@ -5,12 +5,18 @@
         </h2>
         <p class="text-center text-gray-600 mb-12">Take advantage of these limited-time offers</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">            
-            <div v-for="offer in currentOffers" :key="offer.id" :class="[ offer.bgColor,'rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105']" >
+            <div v-for="offer in currentOffers" :key="offer.id" :class="[ offer.bgColor,'rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105']" >                
                 <div class="p-6">
                     <div class="flex justify-between items-start mb-4">
-                        <h3 :class="[offer.textColor, 'text-xl font-semibold']">
-                            {{ offer.title }}
-                        </h3>
+                        <h3 :class="[offer.textColor, 'text-xl font-semibold']">{{ offer.title }}</h3>
+                        <span class="bg-white rounded-full p-3 shadow-md">
+                            <Icon :icon="offer.discount.includes('%') ? 'material-symbols:percent' : 'mdi:gift'" :class="[offer.textColor, 'text-2xl']" />
+                        </span>
+                    </div>
+                    <p class="text-gray-700 mb-6">{{ offer.description }}</p>
+                    <div class="flex items-center text-gray-600 mb-6">
+                        <Icon icon="svg-spinners:clock" class="mr-2" />
+                        <span>Ends on {{ offer.endDate }}</span>
                     </div>
                 </div>
             </div>
