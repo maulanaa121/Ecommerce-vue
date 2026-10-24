@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="min-h-screen scroll-mt-20 bg-gradient-to-b from-gray-50 to-white px-4 py-12 sm:px-6 lg:px-8 flex items-center justify-center" >
+  <div id="about" class="scroll-mt-20 bg-gradient-to-b from-gray-50 to-white px-4 py-12 sm:px-6 lg:px-8" >
     <div class="w-full max-w-7xl mx-auto">
       <div class="flex flex-col lg:flex-row items-center justify-center gap-12">
 
