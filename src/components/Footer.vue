@@ -20,4 +20,34 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const quickLinks = ref([
+  'Home',
+  'Shop',
+  'New Arrivals',
+  'Best Sellers',
+  'Gift Sets'
+]);
+
+const customerService = ref([
+  'Contact Us',
+  'FAQs',
+  'Shipping Policy',
+  'Returns & Exchanges',
+  'Privacy Policy'
+]);
+
+const paymentIcons = ref([
+  'logos:visa',
+  'logos:mastercard',
+  'logos:paypal'
+]);
+
+const socialLinks = ref([
+  { icon: 'fa6-brands:facebook-f', url: '#' },
+  { icon: 'fa6-brands:twitter', url: '#' },
+  { icon: 'fa6-brands:instagram', url: '#' }
+]);
 </script>
+
