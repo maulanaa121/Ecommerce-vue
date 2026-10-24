@@ -7,6 +7,7 @@
     <Offers />
     <About />
     <Contact />
+    <Footer />
   </div>
 </template>
 <script setup>
@@ -17,4 +18,5 @@
   import Offers from './components/Offers.vue';
   import About from './components/About.vue';
   import Contact from './components/Contact.vue';
+  import Footer from './components/Footer.vue';
 </script>
