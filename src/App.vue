@@ -6,6 +6,7 @@
     <Categories />
     <Offers />
     <About />
+    <Contact />
   </div>
 </template>
 <script setup>
