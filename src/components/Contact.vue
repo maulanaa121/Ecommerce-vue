@@ -37,6 +37,57 @@
                         </button>
                     </form>
                 </div>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-xl border border-gray-100">
+                    <h2 class="text-2xl font-serif font-semibold text-gray-900 mb-6">Contact Informations</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-pink-200 p-3 rounded-full mr-4">
+                                <Icon icon="fa-solid:phone" class="text-pink-950 text-lg" />
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Phone</h3>
+                                <p class="text-gray-800">+1 (234) 567-8900</p>
+                                <p class="text-gray-600">Mon-Fri: 9am-6pm</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-200 p-3 rounded-full mr-4">
+                                <Icon icon="fa-solid:envelope" class="text-pink-950 text-lg" />
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Email</h3>
+                                <p class="text-gray-800">comtact@perfurmelux.com</p>
+                                <p class="text-gray-600">support@perfurmelux.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-200 p-3 rounded-full mr-4">
+                                <Icon icon="fa-solid:envelope" class="text-pink-950 text-lg" />
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Our Boutique</h3>
+                                <p class="text-gray-800">123 Perfurme Street</p>
+                                <p class="text-gray-600">Paris,France 75001</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-24">
+                <h3 class="text-lg font-medium text-gray-900 mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-pink-200 hover:bg-gray-200 p-3 rounded-full transition duration-300" >
+                            <Icon icon="fa-brands:instagram" class="text-pink-950" />
+                        </a>
+                        <a href="#" class="bg-pink-200 hover:bg-gray-200 p-3 rounded-full transition duration-300" >
+                            <Icon icon="fa-brands:facebook-f" class="text-pink-950"/>
+                        </a>
+                        <a href="#" class="bg-pink-200 hover:bg-gray-200 p-3 rounded-full transition duration-300" >
+                            <Icon icon="fa-brands:twitter" class="text-pink-950" />
+                        </a>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
